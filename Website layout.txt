@@ -1,0 +1,4 @@
+Home		-index.html
+About Us 	-about.html
+Gallery		-gallery.html
+Contact		-contact.html
