@@ -49,7 +49,7 @@ table {
 
 /*
   ========================================
-  Custom styles
+  Custom styles - MOBILE FIRST
   ========================================
 */
 body {
@@ -66,36 +66,84 @@ body {
           box-sizing: border-box;
 }
 
+/* Navbar */
+.navbar {
+    
+    align-items: flex-start;
+    background-color: #333;
+    color: white;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    
 
-
-.container {
-    margin: 0 auto;
-    width: 500px;
 }
 
-/* Images */
-.img-logo img {
-    max-width: 50%;
+/* CHANGE THIS TO WORK WITH IMAGE LATER ON */
+.logo img {
+    font-size: 1.5rem;
+    margin: .5rem;
+    text-align: center;
+    height: 5vh;
+    max-width: auto;
+    margin: 8px 0 0 8px;
+    
+    
+
+}
+
+.navbar-links {
+    display: none;
+    
+}
+
+.navbar-links ul {
+    flex-direction: column;
+    width: inherit;
+}
+
+.navbar-links li {
+    text-align: center;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    
+    padding: .5rem 1rem;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
+.navbar-links li:hover {
+    background-color: #555;
 
-/* Footer */
-.primary-footer {
-	font-size: 14px;
-	padding-top: 200px;
 }
 
-.primary-footer small {
-	font-size: 14px;
+.navbar-links.active {
+    display: flex;
+    width: 100%;
+    
+    
 }
 
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
 
-/* Nav menu */
-.nav ul {
-    float: right;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 
@@ -104,17 +152,91 @@ body {
 @media only screen and (min-width: 768px) {
     body {
         background: blue;
-        font-size: 30px;
     }
-    .img-logo img{
-        max-width: 50%;
+
+    .toggle-button {
+        display: none;
     }
+
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-links ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: initial;
+        
+    }
+
+    .navbar {
+        align-items: center;
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .navbar-links li {
+        list-style: none;
+    }
+
+    .navbar-links li a {
+        padding: 1rem;
+    }
+
+    
 }
 
+
+
+/* OLD CODE */
+/* .container {
+    margin: 0 auto;
+    width: 500px;
+}
+
+/* Images */
+/* .logo img {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+/* Footer */
+/* .primary-footer {
+	font-size: 14px;
+	padding-top: 200px;
+}
+
+.primary-footer small {
+	font-size: 14px;
+} */
+
+
+/* Nav menu */
+/* .navbar ul {
+    float: right;
+} */
+
+
+
+/* For Tablets */
+/* @media only screen and (min-width: 768px) {
+    body {
+        background: blue;
+        font-size: 30px;
+    }
+    .logo img{
+        max-width: 50%;
+    }
+} */
+
 /* For Desktops/Laptops */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     body {
         background: red;
         
     }
-}
+}  */
