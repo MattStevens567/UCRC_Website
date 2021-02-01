@@ -81,7 +81,7 @@ Navbar
 .header {
     background-color: #fff;
     /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
-    height: 10vh;
+    height: 8vh;
     position: static;
     margin-left: auto;
     margin-right: auto;
@@ -128,6 +128,11 @@ Navbar
     width: 10vh;
     margin: 0;
 }
+
+.header .logo a {
+    height: inherit;
+}
+
 .header .logo img {
     display: block;
     height: inherit;
@@ -206,10 +211,7 @@ Navbar
 }
 
 /* Intro/Cover photo section */
-
-
 .cover {
-    
     width: 100%;
     height: 30vh;
     background: url("../images/ucrc_cover.jpg");
@@ -220,7 +222,7 @@ Navbar
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
 
 .cover-overlay {
@@ -238,20 +240,67 @@ Navbar
 }
 
 .cover-text h1 {
-
+    color: white;
     font-size: 1.3em;
     font-weight: 700;
-    color: white;
     text-shadow: 0 0 5px #000000;
 }
 
 .cover-text p {
-    
-    font-size: 1em;
-    
     color: white;
+    font-size: 1em;
     text-shadow: 0 0 5px #000000;
 }
+
+.social {
+    width: 100%;
+    background-color: white;
+}
+
+.social .social-header h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+
+.social-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.social .social-images  {
+    text-align: center;
+    height: 20vh;
+}
+
+.social .social-images h3 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.social .social-images .facebook img {
+    height: inherit;
+    width: 50%;
+    margin: 0;
+    padding: 10px;
+}
+
+.social .social-images .instagram img {
+    height: inherit;
+    width: 50%;
+    margin: 0;
+    padding: 10px;
+}
+
+.gallery-cell {
+    height: 30vh;
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -323,7 +372,7 @@ Navbar
     .cover-text p {
         
         font-size: 3em;
-        
+        margin: 0 20%;
         color: white;
         text-shadow: 0 0 5px #000000;
     }

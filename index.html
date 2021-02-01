@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/stylesheets/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/stylesheets/flickity.css" media="screen">
+  <script src="assets/javascript/flickity.js"></script>
 
 
 </head>
@@ -17,7 +19,9 @@
     <!-- Put in ucrc logo etc -->
     <section class="header">
       <div class="logo">
-        <img src="assets/images/ucrc_logo.png" alt="University of Canterbury rowing club logo">
+        <a href="http://www.ucrc.co.nz">
+          <img src="assets/images/ucrc_logo.png" alt="University of Canterbury rowing club logo">
+        </a>
 
       </div>
       <!-- <a href='/' class="logo">UCRC</a> -->
@@ -43,7 +47,7 @@
       <div class="cover-text">
         <h1>University of Canterbury Rowing Club</h1>
         <p>
-          UCRC is a rowing club for students, by students, 
+          UCRC is a rowing club for students, by students,
           that prides itself in being the best both on and off the water!
         </p>
       </div>
@@ -52,9 +56,36 @@
 
     </section>
 
-    <section class="">
-
+    <section class="social">
+      <div class="social-header">
+        <h2>Find Us On Social Media!</h2>
+      </div>
+      <div class="social-images">
+        <div class="facebook">
+          <h3>Facebook</h3>
+          <a href="https://www.facebook.com/University-of-Canterbury-Rowing-Club-389128845186777">
+            <img src="assets/images/facebook.png" alt="Link to UCRC Facebook Page">
+          </a>
+        </div>
+        <div class="instagram">
+          <h3>Instagram</h3>
+          <a href="https://www.instagram.com/uc_rowing/">
+            <img src="assets/images/instagram.png" alt="Link to UCRC Instagram Page">
+          </a>
+        </div>
+      </div>
     </section>
+
+    <div class="main-gallery js-flickity" 
+    data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+      <div class="carousel-cell">
+        <img data-flickity-lazyload="assets/images/gallery/image1.jpg"/>
+      </div>
+      <div class="carousel-cell">...</div>
+      <div class="carousel-cell">...</div>
+
+    </div>
+
 
     <section class="contact-us">
       <h1>Work in Progress, please check Instagram and Facebook for contact details</h1>
