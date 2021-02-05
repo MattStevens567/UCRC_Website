@@ -252,15 +252,70 @@ Navbar
     text-shadow: 0 0 5px #000000;
 }
 
-.social {
+.about {
     width: 100%;
     background-color: white;
+}
+
+.about .about-header h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: black;
+}
+
+.about .about-text p {
+    padding: 5% 10% 10% 10%;
+    line-height: 1.5;
+
+}
+
+
+.carousel {
+    width: 100%;
+}
+
+.carousel img {
+    display: block;
+    width: 100%;
+}
+
+  /* position dots in carousel */
+.flickity-page-dots {
+    bottom: 10px;
+}
+
+  /* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+  /* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+.social {
+    width: 100%;
+    background-color: white
 }
 
 .social .social-header h2 {
     padding-top: 10px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: black;
+}
+
+.social  h3 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
     font-weight: 600;
     color: black;
 }
@@ -273,14 +328,18 @@ Navbar
 }
 
 .social .social-images  {
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    height: 20vh;
+    xheight: 20vh;
 }
 
-.social .social-images h3 {
+.social h4 {
+    color: black;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 500;
+
 }
 
 .social .social-images .facebook img {
@@ -297,9 +356,14 @@ Navbar
     padding: 10px;
 }
 
-.gallery-cell {
-    height: 30vh;
+.social .email a{
+    display: inline-block;
+    padding-bottom: 20px;
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
 }
+
 
 
 
