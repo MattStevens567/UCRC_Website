@@ -229,7 +229,6 @@ Navbar
     width: inherit;
     height: inherit;
     background: rgba(17, 17, 17, 0.6);
-    xopacity: 0.1;
     position: absolute;
 }
 
@@ -356,14 +355,29 @@ Navbar
     padding: 10px;
 }
 
+.social .email {
+    padding-bottom: 20px;
+}
+
 .social .email a{
     display: inline-block;
-    padding-bottom: 20px;
     font-size: 1.4em;
     text-align: center;
     width: 100%;
 }
 
+.primary-footer {
+    border-top: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+.primary-footer small {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
 
 
 
