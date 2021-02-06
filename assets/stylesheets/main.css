@@ -480,10 +480,10 @@ Navbar
     .about .about-text p {
         display: inline-block;
         vertical-align: middle;
-        xpadding-right: 20px;
         line-height: 1.5;
         font-size: 2.5em;
         font-weight: 500;
+        max-width: 50%;
     
     }
 
@@ -497,7 +497,7 @@ Navbar
 
     .about-section {
         display: flex;
-        xborder: 1px solid red;
+        justify-content: space-evenly;
         margin-bottom: 100px;
     }
 
@@ -509,20 +509,11 @@ Navbar
         text-align: right;
     }
 
-    .about-section2 {
-        display: flex;
-        border: 1px solid red;
-    }
-
-    .about-section3 {
-        display: flex;
-    }
-
     .about .about-text img {
         object-fit: cover;
         display: block;
         width: 50%;
-
+        max-width: 50%;
         height: auto;
     }
 
@@ -548,7 +539,7 @@ Navbar
     .social-images {
         display: flex;
         align-items: center;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         position: relative;
     }
 
