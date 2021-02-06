@@ -55,7 +55,7 @@ table {
 body {
 	/* background: #293f50;
     color: #888; */
-    background-color: #bbb;
+    background-color: white;
     font: 300 14px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     
   }
@@ -112,6 +112,7 @@ Navbar
     padding: 20px;
     text-decoration: none;
     text-align:center;
+    font-weight: 900;
 
 
 }
@@ -233,7 +234,6 @@ Navbar
 }
 
 .cover-text {
-    padding-bottom: 100px;
     z-index: 10;
     text-align: center;
 }
@@ -264,10 +264,18 @@ Navbar
     color: black;
 }
 
-.about .about-text p {
+.about .about-text {
     padding: 5% 10% 10% 10%;
     line-height: 1.5;
 
+}
+
+.about-section {
+    padding-bottom: 40px;
+}
+
+.about img {
+    display: none;
 }
 
 
@@ -307,52 +315,40 @@ Navbar
     padding-top: 10px;
     text-align: center;
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 900;
     color: black;
 }
 
 .social  h3 {
-    padding-top: 10px;
+    padding-top: 5px;
     text-align: center;
     font-size: 1.1em;
     font-weight: 600;
     color: black;
 }
 
-.social-images {
+.social .social-images {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
-}
-
-.social .social-images  {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    xheight: 20vh;
 }
 
 .social h4 {
     color: black;
     text-align: center;
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 600;
+    padding-bottom: 5px;
 
 }
 
-.social .social-images .facebook img {
+.social .social-images img {
     height: inherit;
-    width: 50%;
-    margin: 0;
-    padding: 10px;
-}
-
-.social .social-images .instagram img {
-    height: inherit;
-    width: 50%;
-    margin: 0;
-    padding: 10px;
+    width: 100px;
 }
 
 .social .email {
@@ -362,10 +358,13 @@ Navbar
 .social .email a{
     display: inline-block;
     font-size: 1.4em;
+    font-weight: 600;
     text-align: center;
     width: 100%;
 }
 
+
+/* Footer Section */
 .primary-footer {
     border-top: 2px solid black;
     padding-top: 20px;
@@ -390,6 +389,8 @@ Navbar
         background-color: white;
 
     }
+
+    /* NavBar section */
     .header {
         height: 5vh;
         min-width: 768px;
@@ -398,16 +399,17 @@ Navbar
     }
     .header li {
         height: 5vh;
-        border-right: 1px solid #aaa;
+        border-right: none;
         float: left;
         
     }
 
     .header li:first-child {
-        border-left: 1px solid #aaa;
+        xborder-left: 1px solid #aaa;
     }
 
     .header li a {
+        border-right: none;
         border-top: none;
         padding: 20px 30px;
         display: flex;
@@ -428,7 +430,7 @@ Navbar
     }
 
     
-
+    /* Cover photo section */
     .cover {
         width: 100%;
         height: 100vh;
@@ -455,9 +457,131 @@ Navbar
         text-shadow: 0 0 5px #000000;
     }
 
-}
+    /* About Us Section */
+    .about {
+        width: 100%;
+        background-color: white;
+    }
+    
+    .about .about-header h2 {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 4em;
+        font-weight: 600;
+        color: black;
+    }
+    
+    
+
+    .about .about-text {
+        padding: 5% 10%;
+    }
+
+    .about .about-text p {
+        display: inline-block;
+        vertical-align: middle;
+        xpadding-right: 20px;
+        line-height: 1.5;
+        font-size: 2.5em;
+        font-weight: 500;
+    
+    }
+
+    .about-text .about-text1 {
+        padding-right: 50px;
+    }
+
+    .about-text .about-text2 {
+        padding-left: 50px;
+    }
+
+    .about-section {
+        display: flex;
+        xborder: 1px solid red;
+        margin-bottom: 100px;
+    }
+
+    .text-align-left {
+        text-align: left;
+    }
+
+    .text-align-right {
+        text-align: right;
+    }
+
+    .about-section2 {
+        display: flex;
+        border: 1px solid red;
+    }
+
+    .about-section3 {
+        display: flex;
+    }
+
+    .about .about-text img {
+        object-fit: cover;
+        display: block;
+        width: 50%;
+
+        height: auto;
+    }
 
 
-.contact-us {
-    z-index: 1;
+
+
+
+    /* Photo Carousel Section */
+    .carousel {
+        width: 66%;
+        margin: auto;
+    }
+
+
+
+    /* Contact Section */
+    .social {
+        margin: 0 auto;
+        width: 75%;
+        background-color: white
+    }
+
+    .social-images {
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        position: relative;
+    }
+
+    .social .social-images img {
+        width: 20%;
+        padding: 10px;
+    }
+
+    .social .social-header h2 {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 4em;
+        font-weight: 600;
+    }
+    
+    .social  h3 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .social h4 {
+        text-align: center;
+        font-size: 2em;    
+    }
+
+    .social .email a{
+        display: inline-block;
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+    }
+
+
 }
