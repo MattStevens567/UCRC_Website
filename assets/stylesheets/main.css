@@ -55,7 +55,7 @@ table {
 body {
 	/* background: #293f50;
     color: #888; */
-    background-color: white;
+    background-color: #f9f9f9;
     font: 300 14px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     
   }
@@ -380,6 +380,7 @@ Navbar
 
 
 
+
 @media only screen and (min-width: 768px) {
     body {
     }
@@ -437,7 +438,7 @@ Navbar
     }
 
     .cover-text {
-        padding-bottom: 600px;
+        padding-bottom: 300px;
         
     }
 
@@ -459,6 +460,7 @@ Navbar
 
     /* About Us Section */
     .about {
+        margin: auto;
         width: 100%;
         background-color: white;
     }
@@ -515,6 +517,7 @@ Navbar
         width: 50%;
         max-width: 50%;
         height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
 
@@ -532,7 +535,7 @@ Navbar
     /* Contact Section */
     .social {
         margin: 0 auto;
-        width: 75%;
+        width: 100%;
         background-color: white
     }
 
@@ -575,4 +578,18 @@ Navbar
     }
 
 
+    
+
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1500px) {
+
+    .about {
+        width: 66%;
+        background-color: blue;
+    }
+
+}
+
+
