@@ -381,8 +381,6 @@ Navbar
 
 
 @media only screen and (min-width: 768px) {
-    body {
-    }
 
     header {
         width: 100%;
@@ -402,10 +400,6 @@ Navbar
         border-right: none;
         float: left;
         
-    }
-
-    .header li:first-child {
-        xborder-left: 1px solid #aaa;
     }
 
     .header li a {
